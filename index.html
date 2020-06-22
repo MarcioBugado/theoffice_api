@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Office</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+        }
+        .container{
+            height: 80%;
+        }
+
+        .form-employee{
+            display: flex;
+        }
+
+        .form-employee div{
+            margin-right: 3em;
+            margin-top: 1em;
+        }
+
+
+    </style>
+</head>
+<body>
+   
+   
+            <div class="container">
+            <h3>New Employee</h3>
+            <form class="form-employee" action="http://localhost:3333/create" method="get">
+                
+                <div class="form-left">
+                <div class="form-group">
+                <label for="emp_id">ID</label>
+                <input class="field form-control" type="number" id="emp_id" name="emp_id" placeholder="id">
+                </div>
+
+                <div class="form-group">
+                <label for="first_name">Name</label>
+                <input class="field form-control" type="text" id="firs_name" name="first_name" placeholder="name">
+                </div>    
+                
+                <div class="form-group">
+                <label for="last_name">Last</label>
+                <input class="field form-control" type="text" id="last_name" name="last_name" placeholder="last">
+                </div>
+                
+                <div class="form-group">
+                <label for="birth_day">Birth Day</label>
+                <input class="field form-control" type="date" id="birth_day" name="birth_day" placeholder="birth_day">
+                </div>    
+                </div>
+                
+                <div class="form-right">
+                <div class="form-group">
+                <label for="sex">Gender</label>
+                <input class="field form-control" type="text" id="sex" name="sex" placeholder="gender">
+                </div>    
+
+                <div class="form-group">
+                <label for="salary">Salary</label>
+                <input class="field form-control" type="number" id="salary" name="salary" placeholder="salary">
+                </div>
+
+                <div class="form-group">
+                <label for="super_id">Supervisor</label>
+                <input class="field form-control" type="number" id="super_id" name="super_id" placeholder="supervisor">
+                </div>
+                
+                <div class="form-group">
+                <label for="branch_id">Branch</label>
+                <input class="field form-control" type="number" id="branch_id" name="branch_id" placeholder="branch">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+
+               
+            </form>
+
+        </div>
+</body>
+
+<script>
+    /*
+    let form = document.getElementById('form')
+    let name = document.getElementById('nome')
+    let sexo = document.getElementById('sexo')
+ 
+    form.addEventListener('submit', function(event){
+      event.preventDefault()
+ 
+     let dados ={
+        nome: name.value,
+        sexo: sexo.value
+     }
+     console.log(dados)
+      fetch('https://reqres.in/api/users',{
+          method: 'post',
+          body: JSON.stringify(dados)
+      })
+ 
+      .then(function(response){
+          response.json()
+      })
+      .then(function(data){
+          console.log(data)
+      })
+    })
+    */
+ </script>
+
+</html>
